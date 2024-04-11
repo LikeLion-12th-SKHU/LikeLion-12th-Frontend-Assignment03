@@ -117,6 +117,7 @@ const set = () => {
 
     //버튼을 클릭하면 addEventListener()가 실행되고
     //Number0 값이 number00에 들어간다
+    //나머지도 똑같이 작동한다.
     number00.addEventListener("click", Number0);
     number01.addEventListener("click", Number1);
     number02.addEventListener("click", Number2);
