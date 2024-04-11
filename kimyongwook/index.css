@@ -1,0 +1,40 @@
+.cal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 510px;
+    height: 720px;
+    margin: auto;
+    border:#ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #88BCFF;
+}
+
+.first_row, .second_row, .third_row, .fourth_row, .fifth_row {
+    display: flex;
+    margin-top: 13px;
+}
+
+.btn {
+    margin: 3px;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #B3E4FF;
+    width: 110px;
+    height: 90px;
+    border-radius: 40%;
+    border: #ffffff;
+    box-shadow: 2px 2px 2px 2px #A8A6A5;
+}
+
+#input {
+    font-size: 30px;
+    font-weight: 800;
+    border-radius: 10px;
+    width: 439px;
+    height: 110px;
+    border:#ffffff;
+    background-color: #B3E4FF;
+    padding: 10px;
+}
