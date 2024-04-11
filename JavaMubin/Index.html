@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./Index.css">
+</head>
+<body>
+    <section class="Calc_Body_Color">
+        <div class="ElementClass">
+            <div class ="result_container">
+                <div id ="result"></div>
+                <div id ="cord"></div>
+                <!-- 결과값 출력되는 자리 -->
+            </div>
+            <div class ="option_class1">
+                <!-- 
+                    한 자리수 계산은 되는데 두 자리 이상부터 안 되더라구요
+                    아무리 구글링 해도 자바 스크립트는 문제가 없어서 HTML을 위주로
+                    봤는데 숫자값이나 (, % 등을 쓸 때 공백이 있으면 제대로 동작이
+                    안 한다는 사실을 알았습니다!
+                 -->
+                <button class="option1">(</button>
+                <button class="option2">)</button>
+                <button class="option3">%</button>
+                <button class="option4">
+                    <img class ="Flower_class" src="./photo/꽃.png" alt="flower">
+                </button>
+            </div>
+            <div class ="option_class2">
+                <button class="option5">7</button>
+                <button class="option6">8</button>
+                <button class="option7">9</button>
+                <button class="option8">/</button>
+            </div>
+            <div class="option_class3">
+                <button class="option9">4</button>
+                <button class="option10">5</button>
+                <button class="option11">6</button>
+                <button class="option12">*</button>
+            </div>
+            <div class="option_class4">
+                <button class="option13">1</button>
+                <button class="option14">2</button>
+                <button class="option15">3</button>
+                <button class="option16">-</button>
+            </div>
+            <div class="option_class5">
+                <button class="option17">0</button>
+                <button class="option18">.</button>
+                <button class="option19">=</button>
+                <button class="option20">+</button>
+            </div>
+        </div>
+    </section>
+    <script src="./Index.js"></script>    
+</body>
+</html>
