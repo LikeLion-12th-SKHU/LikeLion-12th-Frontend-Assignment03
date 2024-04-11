@@ -1,34 +1,34 @@
-var leftBracketBtn = document.querySelector('#left_bracket');
-var rightBracketBtn = document.querySelector('#right_bracket');
-var perBtn = document.querySelector('#per');
-var acBtn = document.querySelector('#ac');
-var sevenBtn = document.querySelector('#seven');
-var eightBtn = document.querySelector('#eight');
-var nineBtn = document.querySelector('#nine');
-var slashBtn = document.querySelector('#slash');
-var fourBtn = document.querySelector('#four');
-var fiveBtn = document.querySelector('#five');
-var sixBtn = document.querySelector('#six');
-var asteriskBtn = document.querySelector('#asterisk');
-var oneBtn = document.querySelector('#one');
-var twoBtn = document.querySelector('#two');
-var threeBtn = document.querySelector('#three');
-var minusBtn = document.querySelector('#minus');
-var zeroBtn = document.querySelector('#zero');
-var pointBtn = document.querySelector('#point');
-var equalBtn = document.querySelector('#equal');
-var plusBtn = document.querySelector('#plus');
+const leftBracketBtn = document.querySelector('#left_bracket');
+const rightBracketBtn = document.querySelector('#right_bracket');
+const perBtn = document.querySelector('#per');
+const acBtn = document.querySelector('#ac');
+const sevenBtn = document.querySelector('#seven');
+const eightBtn = document.querySelector('#eight');
+const nineBtn = document.querySelector('#nine');
+const slashBtn = document.querySelector('#slash');
+const fourBtn = document.querySelector('#four');
+const fiveBtn = document.querySelector('#five');
+const sixBtn = document.querySelector('#six');
+const asteriskBtn = document.querySelector('#asterisk');
+const oneBtn = document.querySelector('#one');
+const twoBtn = document.querySelector('#two');
+const threeBtn = document.querySelector('#three');
+const minusBtn = document.querySelector('#minus');
+const zeroBtn = document.querySelector('#zero');
+const pointBtn = document.querySelector('#point');
+const equalBtn = document.querySelector('#equal');
+const plusBtn = document.querySelector('#plus');
 
 
 function Calculate(value) {
-    var input = document.querySelector("#input"); // id가 input인 요소를 찾아서 변수 input에 저장
+    var display = document.querySelector("#input");
     if (value === "AC") { 
-        input.innerHTML = " ";
+        display.innerHTML = " ";
     } else if (value === "=") { 
-        var current = input.innerHTML;
-        var result = eval(current); 
-        input.innerHTML = result; 
+        const current = display.innerHTML;
+        const result = eval(current); 
+        display.innerHTML = result; 
     } else {
-        input.innerHTML += value; 
+        display.innerHTML += value; 
     }
 }
