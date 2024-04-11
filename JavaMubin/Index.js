@@ -18,18 +18,18 @@ const number00 = document.querySelector(".option17");
 const CommaButton = document.querySelector(".option18");
 const ResultButton = document.querySelector(".option19");
 const PlusButton = document.querySelector(".option20");
-//() 안에 입력된 문서 내의 내용을 찾아서 각각의 변수들에 변환해준다
-    //ex) <html><div class ="mubin">안녕하세요</div></html>
+//() 안에 입력된 문서 내의 내용을 찾아서 각각의 변수들에 변환해준다.⭐️
+    //ex) <html><div class ="mubin">안녕하세요</div></html>⭐️
 
-    //    const helloMubin = document.querySelector(".mubin");
-    //    mubin 클래스를 찾아서 그 안에 있는 값(안녕하세요)을 helloMubin에 반환해준다.
+    //    const helloMubin = document.querySelector(".mubin");⭐️
+    //    mubin 클래스를 찾아서 그 안에 있는 값(안녕하세요)을 helloMubin에 반환해준다.⭐️
     //    대충 이런식으로 이해하고 있는데 피드백 부탁드려요!!!
     //    버튼 하나하나에 값을 지정해야 하기에 하나하나 설정했습니다
 
 
 const display= document.getElementById('cord');
 const element = document.getElementById('result');
-//getElementById 는 id 속성을 가진 요소를 검색하고 그 요소를 반환해준다
+//getElementById 는 id 속성을 가진 요소를 검색하고 그 요소를 반환해준다⭐️
 //html 문서에서 id 속성을 지닌 cord, result 를 찾아서 display 나 element에 있는 값을
 //반환해주겠죠?
 // id로 document 를 검색하는데 요소를 찾지 못한 경우 null 을 리턴합니다!! 
@@ -37,7 +37,7 @@ const element = document.getElementById('result');
 //숫자
 const Number0 = () => {
     element.innerHTML += number00.innerHTML;
-    //html에 원하는 요소 값을 변경하기 위한 innerHTML
+    //html에 원하는 요소 값을 변경하기 위한 innerHTML⭐️
     //실행하면 number00에 들어가 있는 0값을 element(HTML 값)에 더해준다( += )
     //       element.innerHTML += number00.innerHTML;
     // =>    element.innerHTML = element.innerHTML + number00.innerHTML;
@@ -103,7 +103,7 @@ const reset = () => {
 const result = () => {
     //eval('문자열');
     //해당 문자열을 자바스크립트 코드로 인식하여 변경한다
-    //다만 인자가 문자열이 아닐 경우 그대로를 인자 그대로를 반환한다,
+    //다만 인자가 문자열이 아닐 경우 인자 그대로를 반환한다,
 
     //위 코드들에서 element.innerHTML에 값(문자)들을 추가해주고 
     //eval() 함수로 계산한다. 
