@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input.btn {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.table{
+    background-color: gray;
+    padding: 15px;
+    border-radius: 5px;
+    width: 300px;
+    height: 500px;
+}
+
+.monitor{
+    text-align: right;
+    height: 80px;
+    background-color: beige;
+    border-radius: 5px;
+}
+
+input{
+    background-color : beige;
+    width: 70px;
+    height: 70px;
+    border-radius: 40%;
+}
