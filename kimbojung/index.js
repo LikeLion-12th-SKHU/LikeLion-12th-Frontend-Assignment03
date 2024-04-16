@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const display = document.querySelector('#display'); 
+    const display = document.querySelector('.display'); 
 
-    document.querySelectorAll('#container button').forEach(button => {
+    document.querySelectorAll('.container button').forEach(button => {
         button.addEventListener('click', () => {
             const value = button.textContent; // 버튼의 텍스트 콘텐츠를 가져옴
             if (value === 'AC') {
@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (value === '=') {
                 calculateResult(); // = 버튼이면 결과 계산
             } else {
-                appendToDisplay(value); // 그 외의 값은 디스플레이에 추가
+                addValueToDisplay(value); // 그 외의 값은 디스플레이에 추가
             }
         });
     });
 
     // 입력된 값을 디스플레이의 innerHTML에 추가
-    function appendToDisplay(value) {
+    function addValueToDisplay(value) {
         display.innerHTML += value;
     }
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             display.innerHTML = eval(display.innerHTML);
         } catch (e) {
-            display.innerHTML = 'Error'; // 오류 발생 시 에러 메시지 표시
+            display.innerHTML = "유효하지 않은 문자가 포함되어 있습니다."; // 오류 발생 시 에러 메시지 표시
         }
     }
 });
