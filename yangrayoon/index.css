@@ -10,17 +10,24 @@ input.btn {
     font-weight: bold;
 }
 
+.m1{
+    color: gray;
+    font-size: 20px;
+}
 .table{
     background-color: gray;
     padding: 15px;
     border-radius: 5px;
     width: 300px;
     height: 500px;
+    font-size: 20px;
 }
 
 .monitor{
     text-align: right;
-    height: 80px;
+    padding: 10px;
+    margin: 10px;
+    height: 70px;
     background-color: beige;
     border-radius: 5px;
 }

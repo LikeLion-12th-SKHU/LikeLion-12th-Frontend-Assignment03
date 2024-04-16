@@ -21,7 +21,8 @@ let equal = document.querySelector("#equal");
 let plus = document.querySelector("#plus");
 */
 
-let monitor = document.querySelector(".monitor");
+let monitor = document.querySelector(".m2");
+let m2 = document.querySelector(".m1");
 
 document.querySelectorAll(".btn").forEach(button => {
     button.addEventListener("click", function(){
@@ -29,10 +30,11 @@ document.querySelectorAll(".btn").forEach(button => {
 
         if(value === "="){
             let r = eval(monitor.innerHTML);
-            monitor.innerHTML = r;
+            m2.innerHTML = r;
             }
         else if(value === "AC"){
-            monitor.innerHTML = '';
+            monitor.innerHTML = ''
+            m2.innerHTML = ''
         }
         else{
             monitor.innerHTML += value;
