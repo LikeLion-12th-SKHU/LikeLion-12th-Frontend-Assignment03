@@ -25,11 +25,24 @@
     margin-bottom: 10px;
 }
 
-.row_1,
-.row_2,
-.row_3,
-.row_4,
-.row_5 {
+.result,
+.selectedNum {
+    width: 290px;
+    height: 20px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.result {
+    color: gray;
+    font-size: 15px;
+}
+
+.selectedNum {
+    font-size: 25px;
+}
+
+.btn_row {
     display: flex;
     /* flex-direction: row; */
 }
