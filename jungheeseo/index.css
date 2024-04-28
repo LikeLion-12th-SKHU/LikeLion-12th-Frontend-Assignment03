@@ -1,0 +1,51 @@
+.Calculate {
+    width: 300px;
+    background-color:rgb(132, 131, 131);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+ 
+.buttonWrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+ 
+* {
+    box-sizing: border-box;
+}
+
+#calcul {
+    color: rgb(46, 54, 145);
+}
+
+.ac {
+    color: red;
+}
+
+input, button {
+    height: 70px;
+    outline: none;
+}
+ 
+input {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #eeeeee;
+    padding-right: 10px;
+    font-size: 35px;
+}
+ 
+button {
+    height: 60px;
+    background: #eeeeee;
+    border: none;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+ 
