@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll('.calculator-box .calculator .element button');
+    const inputDisplay = document.getElementById('result');
     const recordDisplay = document.getElementById('record');
-    const resultDisplay = document.getElementById('result');
     let currentExpression = '';
 
     buttons.forEach(button => {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 resetCalculator();
             } else {
                 currentExpression += buttonValue;
-                resultDisplay.textContent = currentExpression;
+                inputDisplay.textContent += buttonValue;
             }
         });
     });
@@ -23,16 +23,15 @@ document.addEventListener("DOMContentLoaded", function() {
         try {
             const result = eval(currentExpression);
             recordDisplay.textContent += `${currentExpression} = ${result}\n`;
-            resultDisplay.textContent = result;
+            inputDisplay.textContent = result;
         } catch (error) {
             console.error('Invalid expression:', error);
-        } finally {
-            resetCalculator();
         }
     }
 
     function resetCalculator() {
-        currentExpression = ''; 
-        resultDisplay.textContent = '';
+        currentExpression = '';
+        inputDisplay.textContent = '';
+        recordDisplay.textContent = '';
     }
 });
