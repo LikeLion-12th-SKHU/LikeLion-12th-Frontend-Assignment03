@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+}
+
+td {
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(181, 230, 255);
+    border-spacing: 2px;
+}
+
+tr {
+    height: 50px;
+}
+
+table {
+    border-collapse: separate;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 400px;
+    height: 600px;
+    border-spacing: 5px;
+    background-color: rgb(136, 188, 255);
+    border-radius: 5px;
+    /* border-spacing: 20px 30px; */
+}
+.input {
+    border-bottom: 1px rgb(181, 230, 255);
+    border-top: 1px rgb(181, 230, 255);
+    border-left: 1px rgb(181, 230, 255);
+    border-right: 1px rgb(181, 230, 255);
+    border-radius: 15px;
+    height: 10px;
+}
+input{
+    border: none;
+    width: 80%;
+    height: 40px;
+    font-size: 40px;
+    text-align: right;
+    background-color: rgb(181, 230, 255);
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.rows {
+    border-radius: 30px;
+    border-bottom: 1px rgb(181, 230, 255);
+    border-top: 1px rgb(181, 230, 255);
+    border-left: 1px rgb(181, 230, 255);
+    border-right: 1px rgb(181, 230, 255);
+    box-shadow: 3px 3px 3px rgb(163, 173, 187);
+}

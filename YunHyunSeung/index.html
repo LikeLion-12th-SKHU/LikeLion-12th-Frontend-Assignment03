@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <section>
+            <table border="1">
+                    <tr>
+                        <td colspan="4" class="input">
+                            <input type="text" id="display">
+                        </td>
+                        
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td onclick="add('&#40;')" class="rows"><b>&#40;</b></td>
+                        <td onclick="add('&#41;')" class="rows"><b>&#41;</b></td>
+                        <td onclick="add('%')" class="rows"><b>&#37;</b></td>
+                        <td onclick="add(reset())" class="rows"><b>AC</b></td>
+                    </tr>
+                    <tr>
+                        <td onclick="add(7)" class="rows"><b>7</b></td>
+                        <td onclick="add(8)" class="rows"><b>8</b></td>
+                        <td onclick="add(9)" class="rows"><b>9</b></td>
+                        <td onclick="add('/')" class="rows"><b>&#47;</b></td>
+                    </tr>
+                    <tr>
+                        <td onclick="add(4)" class="rows"><b>4</b></td>
+                        <td onclick="add(5)" class="rows"><b>5</b></td>
+                        <td onclick="add(6)" class="rows"><b>6</b></td>
+                        <td onclick="add('*')" class="rows"><b>&#42;</b></td>
+                    </tr>
+                    <tr>
+                        <td onclick="add(1)" class="rows"><b>1</b></td>
+                        <td onclick="add(2)" class="rows"><b>2</b></td>
+                        <td onclick="add(3)" class="rows"><b>3</b></td>
+                        <td onclick="add('-')" class="rows"><b>&#45;</b></td>
+                    </tr>
+                    <tr>
+                        <td onclick="add(0)" class="rows"><b>0</b></td>
+                        <td onclick="add('.')" class="rows"><b>.</b></td>
+                        <td onclick="add(calculate())" class="rows"><b>=</b></td>
+                        <td onclick="add('+')" class="rows"><b>+</b></td>
+                    </tr>
+                </span>
+            </table>
+    </section>  
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
